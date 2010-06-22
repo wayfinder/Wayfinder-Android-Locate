@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<resources>
+	<style name="theme_custom" parent="android:Theme.Light.NoTitleBar">
+		<item name="android:buttonStyle">@style/style_button_dialog</item>
+		<item name="android:listViewStyle">@style/style_list_item</item>
+		<item name="android:alertDialogStyle">@style/style_dialog</item>
+	</style>
+
+	<style name="style_button_dialog" parent="@android:style/Widget.Button">
+		<item name="android:background">@drawable/background_dialog_button</item>
+		<item name="android:textSize">18dip</item>
+		<item name="android:textColor">@color/color_black</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="title_white" parent="@android:style/TextAppearance">
+		<item name="android:textSize">20dip</item>
+		<item name="android:textColor">@color/now_0</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="activity_title" parent="@android:style/TextAppearance">
+		<item name="android:textSize">17dip</item>
+		<item name="android:textColor">@color/now_0</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_white_big" parent="@android:style/TextAppearance">
+		<item name="android:textSize">15dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+
+	<style name="label_text_white" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+
+	<style name="label_text_white_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_black_big" parent="@android:style/TextAppearance">
+		<item name="android:textSize">15dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="label_text_black_medium_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">13dip</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_black_medium" parent="@android:style/TextAppearance">
+		<item name="android:textSize">13dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="label_text_white_big_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">@color/now_0</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_black_big_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_black_huge_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">17dip</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_now_299_big_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">15dip</item>
+		<item name="android:textColor">@color/now_299</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_now_299_14_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">14dip</item>
+		<item name="android:textColor">@color/now_299</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_now_299_12_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12dip</item>
+		<item name="android:textColor">@color/now_299</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_now_299_medium_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">@color/now_299</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="title_black_big" parent="@android:style/TextAppearance">
+		<item name="android:textSize">20dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="style_dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowBackground">@drawable/transparent</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+		<item name="android:buttonStyle">@style/style_button_dialog</item>
+		<item name="android:windowTitleStyle">@style/title_dialog</item>
+		<item name="android:listViewStyle">@style/style_list_item</item>
+	</style>
+
+	<style name="style_dialog_no_title" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowBackground">@drawable/transparent</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+		<item name="android:buttonStyle">@style/style_button_dialog</item>
+		<item name="android:windowTitleStyle">@style/title_dialog</item>
+		<item name="android:listViewStyle">@style/style_list_item</item>
+	</style>
+
+	<style name="title_dialog" parent="@android:style/TextAppearance">
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/now_0</item>
+		<item name="android:background">@color/color_blue_light</item>
+		<item name="android:gravity">bottom</item>
+	</style>
+
+	<style name="title_black" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/color_black</item>
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_now_6_85_small" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_6_85</item>
+		<item name="android:textSize">12dip</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="label_text_now_6_85_normal" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_6_85</item>
+		<item name="android:textSize">14dip</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="label_text_now_299_bold" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_299</item>
+		<item name="android:textSize">14dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_now_299_size16_bold" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_299</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="title_text_now_6_85_bold" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_6_85</item>
+		<item name="android:textSize">18dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="title_text_now_6_85_size16_bold" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_6_85</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="title_text_now_299_size16_bold" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_299</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="checkbox_setting" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@drawable/selector_checkbox</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="title_text_now_0_size16_bold" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_0</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_now_6_60_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">14dip</item>
+		<item name="android:textColor">@color/now_6_60</item>
+		<item name="android:textStyle">bold</item>
+
+	</style>
+	<style name="label_text_now_6_60_normal" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12dip</item>
+		<item name="android:textColor">@color/now_6_60</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="label_text_now_6_50_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">14dip</item>
+		<item name="android:textColor">@color/now_6_50</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="style_list_item" parent="@android:style/Widget.ListView">
+		<item name="android:listSelector">@drawable/list_item_selector</item>
+		<item name="android:listDivider">@android:drawable/divider_horizontal_bright</item>
+	</style>
+	<style name="now_0_title_white" parent="@android:style/TextAppearance">
+		<item name="android:textSize">18dip</item>
+		<item name="android:textColor">@color/now_0</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="now_0_size_16_white" parent="@android:style/TextAppearance">
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">@color/now_0</item>
+	</style>
+
+	<style name="label_text_size_16_black" parent="@android:style/TextAppearance">
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">@color/color_black</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="label_text_gray_bold" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12dip</item>
+		<item name="android:textColor">@color/color_gray_border_light</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="title_text_now_0_size12_bold" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/now_0</item>
+		<item name="android:textSize">12dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+</resources>

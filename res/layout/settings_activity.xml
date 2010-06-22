@@ -1,0 +1,86 @@
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:padding="5dip">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="30dip" android:gravity="left|center_vertical"
+		android:layout_marginBottom="5dip" android:paddingLeft="10dip"
+		android:paddingRight="10dip" android:background="@color/now_299"
+		android:textAppearance="@style/title_text_now_0_size16_bold"
+		android:text="@string/qtn_andr_368_settings_txt"></TextView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="wrap_content">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="30dip" android:gravity="left|center_vertical"
+			android:paddingLeft="10dip" android:paddingRight="10dip"
+			android:textAppearance="@style/title_text_now_0_size16_bold"
+			android:text="@string/qtn_andr_368_dist_units_txt"
+			android:background="@color/now_6_30"></TextView>
+		<RadioGroup android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/radio_group_units"
+			android:layout_marginBottom="5dip" android:layout_marginTop="5dip"
+			android:orientation="vertical" android:paddingLeft="10dip">
+			<com.vodafone.locate.view.SettingsRadioButton
+				android:layout_width="fill_parent" android:text="@string/qtn_andr_368_metric_rb_txt"
+				android:id="@+id/radio_metric" android:layout_height="40dip"
+				android:paddingLeft="10dip" android:textColor="@drawable/text_color_highlight" android:textAppearance="@style/title_text_now_6_85_size16_bold"/>
+			<ImageView android:layout_width="fill_parent"
+				android:layout_height="1dip" android:background="@color/now_6_30"></ImageView>
+			<com.vodafone.locate.view.SettingsRadioButton
+				android:layout_width="fill_parent" android:text="@string/qtn_andr_368_miles_yards_rb_txt"
+				android:id="@+id/radio_miles_yards" android:textAppearance="@style/title_text_now_6_85_size16_bold"
+				android:layout_height="40dip" android:paddingLeft="10dip" android:textColor="@drawable/text_color_highlight"/>
+			<ImageView android:layout_width="fill_parent"
+				android:layout_height="1dip" android:background="@color/now_6_30"></ImageView>
+			<com.vodafone.locate.view.SettingsRadioButton
+				android:layout_width="fill_parent" android:text="@string/qtn_andr_368_miles_feet_rb_txt"
+				android:id="@+id/radio_miles_feet" android:textAppearance="@style/title_text_now_6_85_size16_bold"
+				android:layout_height="40dip" android:textColor="@drawable/text_color_highlight" android:paddingLeft="10dip"/>
+		</RadioGroup>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="wrap_content">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="30dip" android:gravity="left|center_vertical"
+			android:paddingLeft="10dip" android:paddingRight="10dip"
+			android:textAppearance="@style/title_text_now_0_size16_bold"
+			android:text="@string/qtn_andr_368_gen_information_txt"
+			android:background="@color/now_6_30"></TextView>
+		<ListView android:layout_width="fill_parent" android:id="@+id/list_settings"
+			android:layout_height="wrap_content" android:layout_marginTop="5dip"
+			android:divider="@color/now_6_30" android:dividerHeight="1px">
+		</ListView>
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="1dip" android:background="@color/now_6_30"></ImageView>
+	</LinearLayout>
+</LinearLayout>
+

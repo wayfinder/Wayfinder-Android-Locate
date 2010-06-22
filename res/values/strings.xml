@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<resources>
+    <string name="qtn_andr_368_app_name_txt">360 Locate</string>
+    <string name="qtn_andr_368_find_txt">Find</string>
+    <string name="qtn_andr_368_loading_txt">Loading...</string>
+    <string name="qtn_andr_368_close_tk">Close</string>
+    <string name="qtn_andr_368_exit_txt">Exit</string>
+    <string name="qtn_andr_368_no_places_found_txt">No places were found</string>
+    <string name="qtn_andr_368_all_categories_txt">All %s</string>
+    <string name="qtn_andr_368_2_search_position_needed_txt">You need a valid location in order to search.</string>
+    <string name="qtn_andr_368_show_on_map_txt">Show on map</string>
+    <string name="qtn_368_about_txt">© 2002-2010 Vodafone Group Services Limited\n\nData Sources:\n\n© 2010 Tele Atlas B.V, Sensis, CE Info Systems Pvt. Ltd, DMapas, Foreca, Mimer Information Technology AB.\n\nThe map uses data from geonames.org. This data is licensed under a Creative Commons Attribution 3.0 License – for more information, refer to http://creativecommons.org/licenses/by/3.0/.</string>
+    <string name="qtn_andr_368_accept_tk">Accept</string>
+    <string name="qtn_andr_368_decline_tk">Decline</string>
+    <string name="qtn_andr_368_note_title">Note</string>
+    <string name="qtn_andr_368_mess_closes_in_x_sec_txt">Message closes in %s seconds.</string>
+    <string name="qtn_andr_368_cant_find_yr_loc_txt">Can/'t find your location?</string>
+    <string name="qtn_andr_368_enable_loc_source_ch_settq_txt">You can choose a location source to find places based on your current location. Do you want to change your settings now?</string>
+    <string name="qtn_andr_368_ok_tk">OK</string>
+    <string name="qtn_andr_368_insert_sim_txt">You need to enter a SIM card and turn on your internet connection to use this application.</string>
+    <string name="qtn_andr_368_conn_sett_txt">Make sure your Internet connection settings are turned on. For further help, contact Vodafone Customer Services.</string>
+    <string name="qtn_andr_368_settings_tk">Settings</string>
+    <string name="qtn_andr_368_turn_off_wifi_txt">To use this application you need to turn off the Wi-Fi connection.</string>
+    <string name="qtn_andr_368_you_r_roaming_txt">You are roaming</string>
+    <string name="qtn_andr_368_turn_data_roaming_onq_txt">You are roaming and your roaming data connection is turned off. If you want to continue using the connection please change your roaming settings. You may incur additional data charges. Would you like to change your data settings?</string>
+    <string name="qtn_andr_368_roaming_txt">Roaming</string>
+    <string name="qtn_andr_368_roaming_warning_messq_txt">You/'re roaming. Additional charges may apply. Do you want to continue?</string>
+    <string name="qtn_andr_368_mobile_data_conn_txt">Connecting to mobile network...</string>
+    <string name="qtn_andr_368_error_try_again_txt">We/'re sorry, something went wrong. Please try again.</string>
+    <string name="qtn_andr_368_curr_loc_not_avail_txt">Your current location is not available at the moment.</string>
+    <string name="qtn_andr_368_flight_mode_txt">Airplane mode</string>
+    <string name="qtn_andr_368_flight_mo_ch_settq_txt">Your phone is in Airplane mode and can/'t connect to the internet. Do you want to change your Settings?</string>
+    <string name="qtn_andr_368_settings_txt">Settings</string>
+    <string name="qtn_andr_368_gen_settings_tk">General settings</string>
+    <string name="qtn_andr_368_route_settings_tk">Route settings</string>
+    <string name="qtn_andr_368_dist_units_txt">Distance units</string>
+    <string name="qtn_andr_368_metric_rb_txt">Kilometres, metres</string>
+    <string name="qtn_andr_368_miles_yards_rb_txt">Miles, yards</string>
+    <string name="qtn_andr_368_miles_feet_rb_txt">Miles, feet</string>
+    <string name="qtn_andr_368_about_tk">About</string>
+    <string name="qtn_andr_368_gen_information_txt">General information</string>
+    <string name="qtn_andr_368_km_txt">km</string>
+    <string name="qtn_andr_368_metre_txt">m</string>
+    <string name="qtn_andr_368_miles_txt">miles</string>
+    <string name="qtn_andr_368_miles_abbrev_txt">mi</string>
+    <string name="qtn_andr_368_feet_txt">feet</string>
+    <string name="qtn_andr_368_yards_txt">yards</string>
+    <string name="qtn_andr_368_feet_abbrev_txt">ft</string>
+    <string name="qtn_andr_368_yards_abbrev_txt">yds</string>
+    <string name="qtn_andr_368_decimal_marker_txt">.</string>
+    <string name="qtn_andr_368_hours_txt">h</string>
+    <string name="qtn_andr_368_minutes_txt">m</string>
+    <string name="qtn_andr_368_seconds_txt">s</string>
+    <string name="qtn_andr_368_miles_per_hour_txt">mph</string>
+    <string name="qtn_andr_368_km_per_hour_txt">km/h</string>
+    <string name="qtn_andr_368_updating_txt">Updating...</string>
+    <string name="qtn_andr_368_upgrade_app_2_version_txt">Upgrade Locate to version %s</string>
+    <string name="qtn_andr_368_u_need_2_dwnload_update_txt">Version %s of this application is available for download.\n\nYou need to download this update to continue using the application.</string>
+    <string name="qtn_andr_368_new_version_available_txt">A new version of this application is available for download.</string>
+    <string name="qtn_andr_368_cancel_tk">Cancel</string>
+    <string name="qtn_andr_368_download_tk">Download</string>
+    <string name="qtn_andr_dont_show_again">\?andr_dont_show_again</string>
+</resources>

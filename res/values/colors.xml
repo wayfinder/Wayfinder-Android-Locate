@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<resources>
+<color name="color_text">#ffffff</color>
+<color name="color_transparent">#00000000</color>
+<color name="color_pressed">#77e08810</color>
+<color name="color_black">#FF000000</color>
+<color name="color_gray">#FF999999</color>
+<color name="color_gray_border_light">#FFB2B2B2</color>
+<color name="color_gray_border_dark">#FF595959</color>
+<color name="color_gray_seperator">#FFCCCCCC</color>
+<color name="color_map_bkg">#FFE1E1DA</color>
+<color name="color_blue_light">#FF0192D5</color>
+<color name="color_blue_dark">#FF0F74A2</color>
+<color name="color_black_semitransparent">#aa000000</color>
+<color name="color_white_semitransparent">#aaFFFFFF</color>
+<color name="color_blue_light_semitransparent">#DD0099DA</color>
+<color name="color_blue_dark_semitransparent">#DD0077B7</color>
+<color name="color_blue_border_light">#FF7ACAEC</color>
+<color name="color_blue_border_dark">#FF006C9C</color>
+<color name="now_299">#FF0099DA</color>
+<color name="now_0">#FFFFFFFF</color>
+<color name="now_299_semiTransparent">#440099DA</color>
+<color name="now_299_dark">#0F74A2</color>
+<color name="now_6_85">#262626</color>
+<color name="now_6_50">#808080</color>
+<color name="now_6_60">#666666</color>
+<color name="now_6_30">#B2B2B2</color>
+<color name="now_1807_dark">#8C0000</color>
+</resources>

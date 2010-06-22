@@ -1,0 +1,8 @@
+core_version=core-i437-vm_1_5
+debug_flag=false
+internal_release=true
+
+# This property should be set in your assets/personal_properties.prop. 
+# This file is ignored by Mercurial and will not (Must not!) be committed
+# Notice! Don?t change the value in this file since the build files use this to replace the value with the correct keys
+map_cert_key=set_your_personal_key

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<project name="Maps" >
+	<!-- default="help" -->
+
+	<property environment="ENV"/>
+	<property file="userconfig/${user.name}/antproperties_paths.${ENV.COMPUTERNAME}.txt" />
+	
+	<property name="sdk-location" value="${android.sdk.1_6}"/>
+	<property name="target" value="Google Inc.:Google APIs:4"/>
+
+	<loadproperties srcFile="assets/properties.prop"/>
+
+	<replace file='assets/properties.prop' token='debug_flag=true' value='debug_flag=false'/>
+	<replace file='assets/properties.prop' token='internal_release=true' value='internal_release=true'/>
+	<replace file='assets/properties.prop' token='map_cert_key=set_your_personal_key' value='map_cert_key=0dcesXR6m8WNk7ANR3bf40W9f5r_UHolY1_ta8A'/>
+	<replace file='AndroidManifest.xml' token='android:debuggable="true"' value='android:debuggable="false"'/>
+
+	<move file="libsrc/${core_version}-release.jar" tofile="libs/${core_version}-release.jar"/>
+	<move file="libs/${core_version}-debug.jar" tofile="libsrc/${core_version}-debug.jar"/>
+
+	<replace file='.classpath' token="libs/${core_version}-debug.jar" value="libs/${core_version}-release.jar"/>
+
+
+	
+    <!-- Custom Android task to deal with the project target, and import the proper rules.
+         This requires ant 1.6.0 or above. -->
+    <path id="android.antlibs">
+        <pathelement path="${sdk-location}/tools/lib/anttasks.jar" />
+        <pathelement path="${sdk-location}/tools/lib/sdklib.jar" />
+        <pathelement path="${sdk-location}/tools/lib/androidprefs.jar" />
+        <pathelement path="${sdk-location}/tools/lib/apkbuilder.jar" />
+        <pathelement path="${sdk-location}/tools/lib/jarutils.jar" />
+    </path>
+	
+	<!-- Erase the old binaries to ensure that new ones are created :D -->
+	<delete dir="bin"/>
+
+    <taskdef name="setup"
+        classname="com.android.ant.SetupTask"
+        classpathref="android.antlibs"/>
+
+    <!-- Execute the Android Setup task that will setup some properties specific to the target,
+         and import the rules files.
+         To customize the rules, copy/paste them below the task, and disable import by setting
+         the import attribute to false:
+            <setup import="false" />
+         
+         This will ensure that the properties are setup correctly but that your customized
+         targets are used.
+    -->
+    <setup />
+	
+	<target name="debug" description="Makes a release build" />
+		
+</project>

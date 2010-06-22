@@ -1,0 +1,123 @@
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="5dip" android:background="@color/now_0">
+
+	<include android:id="@+id/include01" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" layout="@layout/include_search_result_upper"
+		android:background="@color/now_299_dark" />
+
+	<ScrollView android:layout_width="fill_parent" android:id="@+id/ScrollView"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<LinearLayout android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:id="@+id/LinearLayout"
+			android:orientation="vertical" android:paddingBottom="10dip">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:id="@+id/lowerLayout" android:layout_weight="1"
+				android:background="@color/now_0" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				10dip
+				<LinearLayout android:id="@+id/LinearLayout"
+					android:orientation="horizontal" android:layout_width="fill_parent" android:paddingLeft="10dip" android:paddingTop="5dip" android:paddingBottom="5dip" android:layout_height="60dip">
+					<TextView android:id="@+id/sr_address"
+						android:layout_width="fill_parent" android:layout_weight="1"
+						android:textAppearance="@style/label_text_now_6_85_normal"
+						android:layout_height="fill_parent" android:lines="2" android:gravity="bottom" android:lineSpacingExtra="4dip" android:paddingBottom="4dip" android:paddingRight="5dip" android:text="Bantorget 1 ---------------------------------- 221 04  Lund"></TextView>
+
+					<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+						<ImageView android:id="@+id/sr_provider" android:src="@drawable/icon" android:visibility="visible" android:layout_gravity="right" android:layout_height="15dip" android:adjustViewBounds="true" android:layout_width="fill_parent" android:layout_marginTop="3dip" android:scaleType="fitEnd" android:layout_marginRight="5dip"></ImageView>
+						<TextView android:id="@+id/sr_distance" android:text="50 m" android:layout_height="fill_parent" android:gravity="bottom|left" android:layout_width="wrap_content" android:textAppearance="@style/label_text_now_6_85_small" android:lineSpacingExtra="8dip" android:paddingRight="5dip"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_height="wrap_content"
+					android:orientation="vertical" android:layout_width="fill_parent"
+					android:id="@+id/phone_layout_simple" android:visibility="visible"><ImageView android:scaleType="fitXY" android:id="@+id/SeparatorImage" android:layout_width="fill_parent" android:focusableInTouchMode="false" android:focusable="false" android:background="@color/now_6_30" android:layout_height="1px"></ImageView>
+					
+					<TextView android:layout_width="fill_parent" android:id="@+id/sr_phone_nbr" android:clickable="true"
+						android:focusable="true" android:focusableInTouchMode="true"
+						android:layout_height="40dip" android:gravity="center_vertical"
+						android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="5dip" android:paddingTop="5dip" android:textAppearance="@style/title_text_now_299_size16_bold" android:text="+44 (0)201 239 04 23 42"></TextView>
+					
+				</LinearLayout>
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:orientation="vertical" android:id="@+id/email_layout_simple" android:visibility="visible"><ImageView android:scaleType="fitXY" android:id="@+id/SeparatorImage" android:layout_width="fill_parent" android:focusableInTouchMode="false" android:focusable="false" android:background="@color/now_6_30" android:layout_height="1px"></ImageView>
+					<TextView android:text="pizza@email.com"
+						android:id="@+id/sr_email" android:layout_width="fill_parent"
+						android:tag="@+id/sr_email" android:layout_height="40dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="5dip" android:paddingTop="5dip" android:textAppearance="@style/title_text_now_299_size16_bold"></TextView>
+					
+				</LinearLayout>
+
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:orientation="vertical" android:id="@+id/web_layout_simple" android:visibility="visible"><ImageView android:scaleType="fitXY" android:layout_width="fill_parent" android:id="@+id/SeparatorImage" android:layout_height="1px" android:background="@color/now_6_30"></ImageView>
+					<TextView android:layout_width="fill_parent" android:tag="@+id/sr_web_address" android:id="@+id/sr_webaddress" android:layout_height="40dip" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="5dip" android:paddingTop="5dip" android:textAppearance="@style/title_text_now_299_size16_bold" android:text="http://www.webaddress.com" android:lines="1" android:ellipsize="marquee" android:marqueeRepeatLimit="marquee_forever"></TextView>
+					
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/description_layout_simple" android:visibility="visible"><ImageView android:scaleType="fitXY" android:layout_width="fill_parent" android:id="@+id/SeparatorImage" android:layout_height="1px" android:background="@color/now_6_30"></ImageView>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Description"
+						android:id="@+id/localized_description_label" android:paddingRight="5dip" android:paddingTop="5dip" android:textAppearance="@style/label_text_now_299_bold" android:paddingLeft="10dip"></TextView>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+						android:id="@+id/description_body" android:textAppearance="@style/label_text_now_6_85_normal" android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="5dip" android:paddingTop="10dip"></TextView>
+					
+
+				</LinearLayout><ImageView android:scaleType="fitXY" android:layout_width="fill_parent" android:id="@+id/SeparatorImage" android:background="@color/now_6_30" android:layout_height="1px"></ImageView>
+
+
+
+<!--				<com.vodafone.maps.pint.view.DynamicContentView-->
+<!--					android:layout_height="100dip" android:id="@+id/dynamic_content"-->
+<!--					android:layout_width="fill_parent" android:visibility="invisible">-->
+<!--				</com.vodafone.maps.pint.view.DynamicContentView>-->
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<FrameLayout android:layout_width="fill_parent"
+		android:layout_weight="0" android:layout_gravity="bottom|center_vertical|center_horizontal"
+		android:layout_height="wrap_content">
+		<Button 
+		    android:id="@+id/toggle_map"
+			android:layout_gravity="center_vertical|center_horizontal|center"
+			android:background="@drawable/floating_button" android:layout_width="fill_parent"
+			android:text="@string/qtn_andr_368_show_on_map_txt"
+			android:layout_height="wrap_content" android:textStyle="bold" android:paddingRight="20dip" android:paddingBottom="18dip" android:paddingTop="12dip" android:paddingLeft="20dip" android:textColor="@drawable/text_color_highlight" android:textSize="18dip" android:clickable="true" android:focusable="true">
+		</Button>
+	
+</FrameLayout>
+</LinearLayout>

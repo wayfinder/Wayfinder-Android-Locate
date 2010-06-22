@@ -1,0 +1,68 @@
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="30dip">
+	<LinearLayout android:background="@drawable/dialog_shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingTop="5px" android:paddingLeft="3px" android:paddingRight="4px" android:paddingBottom="4px" android:layout_weight="1"><LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:background="@color/now_299_dark" android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent" android:gravity="left|center_vertical" android:id="@+id/layout_title" android:background="@color/now_299" android:layout_height="wrap_content">
+			<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_title" android:paddingLeft="5dip" android:src="@drawable/navi_attention" android:visibility="gone"></ImageView>
+			<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/text_title" android:gravity="bottom|left" android:textAppearance="@style/now_0_title_white" android:layout_margin="10dip" android:text="@string/qtn_andr_368_note_title"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent" android:gravity="center" android:background="@color/now_299_dark" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginBottom="5dip" android:layout_marginTop="5dip">
+			<com.vodafone.locate.view.ProgressBar android:layout_height="wrap_content" android:id="@+id/progressbar" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:background="@color/now_0" android:layout_marginLeft="5dip" android:visibility="gone"></com.vodafone.locate.view.ProgressBar>
+			<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="10dip">
+				<TextView android:layout_weight="1" android:id="@+id/text_message" android:layout_height="wrap_content" android:layout_width="fill_parent" android:textAppearance="@style/now_0_size_16_white"></TextView>
+				<TextView android:layout_weight="1" android:id="@+id/secondary_text_message" android:layout_height="wrap_content" android:layout_width="fill_parent" android:textAppearance="@style/now_0_size_16_white" android:gravity="left"></TextView>
+				<LinearLayout android:id="@+id/layout_content" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:visibility="visible"></LinearLayout>
+			</LinearLayout>
+
+
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:id="@+id/layout_timer" android:layout_width="fill_parent" android:background="@color/color_blue_dark" android:layout_margin="10dip">
+			<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/qtn_andr_368_mess_closes_in_x_sec_txt" android:textAppearance="@style/label_text_white" android:id="@+id/text_timer"></TextView>
+	
+</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:visibility="visible" android:layout_weight="1">
+			<CheckBox android:layout_height="wrap_content" android:id="@+id/cb_dont_show_again" android:text="@string/qtn_andr_dont_show_again" android:textAppearance="@style/now_0_size_16_white" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" android:layout_width="wrap_content" android:layout_marginBottom="10dip"></CheckBox>
+		</LinearLayout>
+		
+	
+</LinearLayout></LinearLayout><LinearLayout android:layout_width="fill_parent" android:id="@+id/layout_buttons" android:layout_height="wrap_content" android:layout_weight="0">
+			<Button android:id="@+id/btn_positive" android:textAppearance="@style/label_text_size_16_black" android:layout_width="fill_parent" android:background="@drawable/floating_button_left" android:text="Ok" android:textColor="@drawable/text_color_highlight" android:layout_height="50dip" android:layout_gravity="center" android:layout_weight="1"></Button>
+			<Button android:layout_weight="1" android:id="@+id/btn_neutral" android:textAppearance="@style/label_text_size_16_black" android:background="@drawable/floating_button_middle" android:layout_width="fill_parent" android:text="Neu" android:textColor="@drawable/text_color_highlight" android:layout_height="50dip" android:layout_gravity="center"></Button>
+			<Button android:layout_weight="1" android:id="@+id/btn_negative" android:textAppearance="@style/label_text_size_16_black" android:background="@drawable/floating_button_right" android:layout_width="fill_parent" android:text="Cancel" android:textColor="@drawable/text_color_highlight" android:layout_gravity="center" android:layout_height="50dip"></Button>
+		
+</LinearLayout>
+	
+	
+	
+
+
+</LinearLayout>

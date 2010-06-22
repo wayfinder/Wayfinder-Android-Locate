@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<LinearLayout android:id="@+id/upperLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="vertical"
+	android:layout_height="75dip">
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="50dip">
+		<ImageView android:id="@+id/details_image" android:src="@drawable/cat_all"
+			android:layout_height="50dip" android:layout_width="50dip"
+			android:scaleType="fitXY"></ImageView>
+		<LinearLayout android:id="@+id/name_categ_layout"
+			android:orientation="vertical" android:layout_gravity="center_vertical"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:descendantFocusability="beforeDescendants"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:background="@color/now_299_dark" android:focusable="true">
+			<TextView android:layout_width="fill_parent" android:id="@+id/sr_name"
+				android:paddingLeft="10dip" android:text="Name"
+				android:layout_weight="1" android:gravity="center_vertical"
+				android:lines="1" android:marqueeRepeatLimit="3" android:ellipsize="marquee"
+				android:scrollHorizontally="true" android:background="@color/now_299"
+				android:layout_height="25dip" android:textAppearance="@style/now_0_title_white"></TextView>
+			<TextView android:id="@+id/sr_category"
+				android:layout_width="fill_parent" android:paddingLeft="10dip"
+				android:text="Category" android:textStyle="bold" android:gravity="center_vertical"
+				android:lines="1" android:marqueeRepeatLimit="3" android:ellipsize="marquee"
+				android:scrollHorizontally="true" android:layout_height="25dip" android:background="@color/now_299_dark" android:textAppearance="@style/title_text_now_0_size12_bold"></TextView>
+		</LinearLayout>
+		
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="horizontal" android:id="@+id/ratings_layout"
+		android:layout_height="20dip" android:visibility="gone">
+		<ImageView android:src="@drawable/icon" android:scaleType="fitXY"
+			android:layout_width="20dip" android:id="@+id/rating_1"
+			android:background="@color/now_299_dark" android:layout_height="20dip"></ImageView>
+		<ImageView android:src="@drawable/icon" android:scaleType="fitXY"
+			android:layout_width="20dip" android:id="@+id/rating_2"
+			android:background="@color/now_299_dark" android:layout_height="20dip"></ImageView>
+		<ImageView android:src="@drawable/icon" android:scaleType="fitXY"
+			android:layout_width="20dip" android:id="@+id/rating_3"
+			android:background="@color/now_299_dark" android:layout_height="20dip"></ImageView>
+		<ImageView android:src="@drawable/icon" android:scaleType="fitXY"
+			android:layout_width="20dip" android:id="@+id/rating_4"
+			android:background="@color/now_299_dark" android:layout_height="20dip"></ImageView>
+		<ImageView android:src="@drawable/icon" android:scaleType="fitXY"
+			android:layout_width="20dip" android:id="@+id/rating_5"
+			android:background="@color/now_299_dark" android:layout_height="20dip"></ImageView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_weight="1" android:background="@color/now_299_dark"
+			android:layout_height="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:textAppearance="@style/label_text_now_6_50_bold"
+			android:textColor="@color/color_white_semitransparent"
+			android:layout_gravity="right" android:gravity="right" android:id="@+id/rev_text"
+			android:background="@color/now_299_dark" android:layout_height="fill_parent"
+			android:visibility="visible" android:text="0 reviews"></TextView>
+	</LinearLayout>
+</LinearLayout>
